@@ -1,0 +1,119 @@
+.rodape{
+    /*position: absolute;
+    bottom: 0;*/
+}
+
+.main-container{padding-top: 130px;}
+
+.carrinho-container{
+    padding: 10px;
+    width: 100%;
+}
+
+.carrinho-container h2{
+    font-size: 1.7em;
+    color: #1167B2;
+}
+
+table.carrinho{
+    margin-top: 20px;
+    width: 100%;
+    /*border: 1px solid grey;*/
+    padding: 0;
+    border-spacing:0;
+}
+
+table.carrinho thead, table.carrinho tfoot{
+    background-color: #dbe1ea;
+}
+
+table.carrinho tbody th:first-child, table.carrinho tbody td:first-child{text-align: left;}
+
+table.carrinho th{
+    padding: 8px;
+    color: #333;
+}
+
+table.carrinho tbody td{
+    text-align: center;
+    padding: 8px;
+    border-bottom: 2px solid #dbe1ea;
+}
+
+table.carrinho tbody td:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+
+table.carrinho tbody td:nth-child(1) p{
+    padding-left: 10px;
+    width: 100%;
+}
+
+table.carrinho tbody td:nth-child(1) img{
+    max-width: 80px;
+    border-radius: 10px;
+}
+
+table.carrinho tbody td:nth-child(2), table.carrinho td:nth-child(4), table.carrinho tfoot tr:nth-child(1) td:nth-child(2){
+    color: green;
+    font-weight: 600;
+}
+
+table.carrinho tbody td:nth-child(3) span{
+    font-weight: 600;
+    font-size: 1.3em;
+    cursor: pointer;
+    padding: 5px;
+    vertical-align: middle;
+}
+table.carrinho tbody td:nth-child(3) span:hover{color: #117ce6;}
+
+table.carrinho tbody td:nth-child(3) input{
+    width: 30px;
+    padding: 5px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+
+table.carrinho tbody button{
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #535353;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background: none;
+}
+
+table.carrinho tbody button:hover{color: #e61111;}
+
+table.carrinho tfoot tr{width: 100%;}
+
+table.carrinho tfoot tr:nth-child(1) td:nth-child(2), table.carrinho tfoot td:nth-child(3){border-bottom: 0.5px solid #999;}
+
+table.carrinho tfoot td:nth-child(2){
+    text-align: center;
+    padding: 20px 0;
+}
+
+table.carrinho tfoot a{
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    background-color: green;
+}
+
+table.carrinho tfoot a:hover{background-color: darkgreen;}
+
+@media only screen and (max-width: 600px){
+    table.carrinho tfoot a{padding: 10px;}
+}
+
+
+
+
+

@@ -1,0 +1,272 @@
+@font-face{
+    font-family: "Roboto";
+    font-weight: normal;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: "Roboto";
+    font-weight: 600;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face{
+    font-family: "Roboto";
+    font-weight: bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: "Roboto";
+    font-weight: lighter;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face{
+    font-family: "Segoe Print";
+    font-weight: normal;
+    src: url(../fonts/Segoe-Print.ttf);
+}
+@font-face{
+    font-family: "Vermin Vibes";
+    src: url(../fonts/Vermin-Vibes.woff);
+}
+
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+.cabecalho{
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #e3e3e3;
+    box-shadow: 0px 5px 13px 5px rgba(72, 72, 72, 0.23);
+}
+
+.cabecalho .container{
+    max-width: 1210px;
+    margin: 0 auto;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #1167B2;
+    font-family: 'Segoe Print';
+    height: 100%;
+    font-size: 1.1em;
+    cursor: pointer;
+
+}
+
+.logo span{
+    text-align: center;
+    width: 100%;
+    font-family: "Vermin Vibes";
+    font-size: 1.8em;
+    margin-top: 5px;
+    margin-bottom: -15px;
+    letter-spacing: 2px;
+}
+
+.menu, .dropdown{
+    display: flex;
+    height: 100%;
+}
+
+.menu a{
+    padding: 18px;  
+    color: #1167B2;
+    border-left: 2px dashed #1167B2;
+}
+
+.dropdown-btn{border-right: 2px dashed #1167B2;}
+.dropdown-btn::after{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.3em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+.dropdown:hover .dropdown-btn, .menu a:hover{background-color: #1b68b7;color: #fff; border-color: #1b68b7 !important;}
+.dropdown:hover .dropdown-menu{display: flex;}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 130px;
+    top: 54px;
+    border: 1px solid #1b68b7;
+    background-color: #fff;
+    /*box-shadow: 0 10px 15px 0px #1b68b7;*/
+}
+
+a.dropdown-item{
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+a.dropdown-item:hover{background-color: #2e4e6f;}
+.dropdown-menu .active{
+    background-color: #1b68b7;
+    color: #fff;
+}
+
+/*------------------------------------------------*/
+
+ol.breadcrumb{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li.breadcrumb-item{
+    padding-left: 10px;
+    color: #1167B2;
+}
+
+li.breadcrumb-item:after{
+    margin-left: 10px;
+    content: ">";
+    color: #6d6d6d;
+}
+
+li.active{color: #000;}
+li.active:after{content: "";}
+
+/*------------------------------------------------*/
+
+.main-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 55px;
+}
+
+.bannerPromo{width: 100%;}
+
+.lista-produto{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista-produto h4{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #77ABD9;
+    font-size: 1.7em;
+    font-weight: 600;
+    color: #1167B2;
+}
+
+/*-----------------------------------------------*/
+
+.container-produto{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.produto{
+    margin: 10px;
+    background: #EBEBEB;
+    border: 1px solid #77ABD9;
+    text-align: center;
+    padding-bottom: 25px;
+    box-shadow: 5px 5px 15px 0px rgba(169,169,169, 0.3);
+}
+
+.produto img{
+    max-width: 300px;
+    box-shadow: 0 10px 15px 0px #dbdbdb;
+    margin-bottom: 10px;
+}
+
+.produto h4{
+    border: none;
+    font-size: 1.3em;
+}
+
+.produto p{
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.produto h3{
+    margin-bottom: 25px;    
+}
+
+.produto span{
+    font-weight: normal;
+    margin-left: 5px;
+    vertical-align: 1px;
+    font-size: 0.8em;
+}
+
+.produto-btn{
+    padding: 10px 20px;
+    background-color: #1167B2;
+    border: 1px solid #77ABD9;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.produto-btn:hover{
+    background-color: #77ABD9;
+    transition: .3s;
+}
+
+/*----------------------------------------*/
+
+.rodape{
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    border-top: 1px solid #dbdbdb;
+    box-shadow: 0 -10px 15px 0px #e5e5e5;
+}
+
+.rodape .logo{
+    padding: 15px 0; 
+    margin-right: 0;
+}
+
+.rodape .container{
+    max-width: 1210px;
+    margin: 0 auto;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.rodape .creditos{font-size: 0.8em;line-height: 20px;}
