@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27-Nov-2019 às 01:19
+-- Tempo de geração: 28-Nov-2019 às 18:15
 -- Versão do servidor: 10.4.8-MariaDB
 -- versão do PHP: 7.3.11
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `mhsartesanato`
 --
+CREATE DATABASE IF NOT EXISTS `mhsartesanato` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `mhsartesanato`;
 
 -- --------------------------------------------------------
 
