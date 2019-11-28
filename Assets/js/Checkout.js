@@ -24,7 +24,7 @@ function calcularValor() {
 }
 
 function ajustarRodape(){
-    if(($('#produtosCarrinho tr').length < 4) && ($(window).width() > 990)){
+    if(($('#produtosCarrinho tr').length <= 4) && ($(window).width() > 990)){
         $('.rodape').css("position", "absolute");
         $('.rodape').css("bottom", "0");
     }

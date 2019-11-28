@@ -16,7 +16,7 @@
         public function excluir(){
             $modelCarrinho = new ModelCarrinho();
             $modelCarrinho->excluirProduto(filter_input_array(INPUT_POST));
-            header('Location: http://localhost/MVC/mhsartesanato/carrinho/');
+            header('Location: http://localhost/mhsartesanato/carrinho/');
         }
 
         public function checkout(){

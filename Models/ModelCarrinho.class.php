@@ -8,7 +8,7 @@
         public function getCarrinho(){
             if(isset($_SESSION['carrinho'])){
                 return $_SESSION['carrinho'];
-            }else return header('Location: http://localhost/MVC/mhsartesanato/');
+            }else return header('Location: http://localhost/mhsartesanato/');
         }
 
         public function adcionarProduto($id_produto){

@@ -13,6 +13,6 @@ $(function(){
 
     var tam = $(window).width(); 
     if (tam < 990){
-        $('.bannerPromo').attr("src","http://localhost/MVC/mhsartesanato/Assets/images/bannerPromoCel.png");
+        $('.bannerPromo').attr("src","http://localhost/mhsartesanato/Assets/images/bannerPromoCel.png");
     }
 });
